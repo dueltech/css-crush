@@ -1,0 +1,27 @@
+name: 🚀 Release
+run-name: ${{ github.event.release.name }}
+
+on:
+    release:
+      types:
+        - published
+
+jobs:
+    publish-package:
+        name: "📦 publish packages"
+        runs-on: ubuntu-latest
+        permissions:
+          contents: read
+          packages: write
+        steps:
+            - uses: actions/checkout@v6
+            - uses: actions/setup-node@v6
+              with:
+                node-version: 22
+                cache: 'npm'
+            - run: |
+                npm config set \
+                    //npm.pkg.github.com/:_authToken=${{ github.token }} \
+                    @dueltech:registry=https://npm.pkg.github.com    
+                npm ci
+                npm publish 
