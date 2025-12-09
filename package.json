@@ -1,6 +1,6 @@
 {
     "name": "@dueltech/css-crush",
-    "version": "5.0.2",
+    "version": "5.0.3",
     "description": "CSS-Crush, CSS preprocessor",
     "main": "./js/index.js",
     "types": "./js/index.d.ts",

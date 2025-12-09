@@ -285,7 +285,7 @@ function resolveInputs(fileGlobs) {
         return result;
     }
 
-    files = [...files];
+    files = Array.from(files);
 
     const rootPath = files
         .shift();

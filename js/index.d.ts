@@ -27,8 +27,8 @@ export type CSSCrushOptions = {
     boilerplate?: boolean;
     minify?: boolean;
     vendorTarget?: ('all' | 'none' | 'moz' | 'ms' | 'webkit');
-    plugins?: string | [string];
-    importPath?: string | [string];
+    plugins?: string | string[];
+    importPath?: string | string[];
     newlines?: ('use-platform' | 'windows' | 'unix');
     formatter?: ('block' | 'single-line' | 'padded');
     input?: string;
@@ -46,8 +46,8 @@ export type CSSCrushProcessOptions = CSSCrushOptions & {
  * @property {boolean} [boilerplate]
  * @property {boolean} [minify=true]
  * @property {('all' | 'none' | 'moz' | 'ms' | 'webkit')} [vendorTarget='all']
- * @property {string | [string]} [plugins]
- * @property {string | [string]} [importPath]
+ * @property {string | string[]} [plugins]
+ * @property {string | string[]} [importPath]
  * @property {('use-platform' | 'windows' | 'unix')} [newlines='use-platform']
  * @property {('block' | 'single-line' | 'padded')} [formatter]
  * @property {string} [input]
