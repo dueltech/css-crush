@@ -1,0 +1,7 @@
+.github/
+.vscode/
+.eslintrc.*
+.gitattributes
+boilerplate.txt
+jsconfig.json
+tests/

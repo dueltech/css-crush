@@ -1,18 +1,22 @@
 {
-    "name": "csscrush",
-    "version": "5.0.0",
+    "name": "dueltech/css-crush",
+    "version": "5.0.1",
     "description": "CSS-Crush, CSS preprocessor",
     "main": "./js/index.js",
     "types": "./js/index.d.ts",
     "repository": {
         "type": "git",
-        "url": "https://github.com/peteboere/css-crush.git"
+        "url": "https://github.com/dueltech/css-crush.git"
     },
     "bugs": {
-        "url": "https://github.com/peteboere/css-crush/issues"
+        "url": "https://github.com/dueltech/css-crush/issues"
     },
     "bin": {
         "csscrush": "./bin/csscrush"
+    },
+    "publishConfig": {
+        "access": "restricted",
+        "registry": "https://npm.pkg.github.com"
     },
     "scripts": {
         "lint": "eslint --fix ./js/index.js",
